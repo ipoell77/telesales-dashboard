@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # Load data
-df = pd.read_excel("Data.xlsx", sheet_name="data")
+df = pd.read_excel("data.xlsx", sheet_name="data")
 
 # Filter step relevan
 relevant_steps = ["01. Leads from DM", "02. Uploaded by Telesales", "04. Connected", "06. Presented", "07. Agree"]
@@ -68,3 +68,4 @@ plot_line_chart(filtered_df, "Contacted %", "Contacted / Uploaded (%)", "blue")
 plot_line_chart(filtered_df, "Agree %", "Agree / Uploaded (%)", "green")
 
 plot_line_chart(filtered_df, "Presented %", "Agree / Presented (%)", "lightblue")
+
